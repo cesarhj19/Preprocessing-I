@@ -1,1 +1,350 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Barlow", sans-serif !important;
+  font-size: 62.5%;
+}
+body {
+  line-height: 1;
+}
+.container-background {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.page-background {
+  position: absolute;
+  left: -10%;
+  top: -10%;
+  width: 150%;
+  height: 150vh;
+  background: url("https://images.complex.com/complex/image/upload/c_limit,dpr_auto,q_90,w_720/fl_lossy,pg_1/krusty-krab-viacom_eb1tmr.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  filter: blur(45px);
+  z-index: 1;
+}
+.center-site {
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container-site {
+  display: grid;
+  height: 80vh;
+  width: 140rem;
+  background: white;
+  border-radius: 1%;
+  grid-template-columns: 8rem 30rem 1fr;
+  overflow: hidden;
+}
+.container-site nav {
+  background: #0e268e;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #0e268e 1%, #9267d3 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #0e268e 1%, #9267d3 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #0e268e 1%, #9267d3 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.container-site nav ul li {
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8rem;
+}
+.container-site nav ul li a {
+  font-size: 2.8rem;
+  text-decoration: none;
+  color: white;
+}
+.container-site .user-profile {
+  background: #002497;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #002497 0%, #a176ec 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #002497 0%, #a176ec 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #002497 0%, #a176ec 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+.container-site .user-profile .name {
+  font-size: 2.3rem;
+  color: white;
+  font-weight: 400;
+  text-align: center;
+  padding: 3.2rem 0;
+  letter-spacing: 0.2rem;
+}
+.container-site .user-profile .border-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: dashed 3px #3847ae;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.container-site .user-profile .user-img {
+  background: url("https://hips.hearstapps.com/hmg-prod/images/mocking-spongebob-1556133078.jpg?crop=0.785xw%3A0.770xh%3B0.111xw%2C0.230xh&amp;resize=1440%3A%2A");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+}
+.container-site .user-profile .user-position {
+  font-size: 2rem;
+  font-weight: 500;
+  color: white;
+  margin: 2rem 0 0;
+  text-align: center;
+}
+.container-site .user-profile .title {
+  font-size: 1.9rem;
+  font-weight: 400;
+  color: white;
+  margin: 2rem 0;
+}
+.container-site .user-profile .user-skills {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+.container-site .user-profile .user-skills .skill {
+  background: #6761c7;
+  color: white;
+  font-weight: 300;
+  font-size: 1.4rem;
+  border-radius: 4px;
+  padding: 0.7rem 1.5rem;
+  display: inline-block;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.container-site .user-profile .user-skills .skill:hover {
+  color: #313cb2;
+  background: #fff;
+}
+.container-site .content-area {
+  background: #f8f7fc;
+  padding: 4rem;
+}
+.container-site .content-area .hire-status {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 5rem;
+}
+.container-site .content-area .hire-status .primary-button {
+  color: white;
+  font-weight: 500;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  background: #57bcfe;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  -webkit-box-shadow: 0px 1rem 4.4rem 0px rgba(87, 187, 254, 0.5);
+  -moz-box-shadow: 0px 1rem 4.4rem 0px rgba(87, 187, 254, 0.5);
+  box-shadow: 0px 1rem 4.4rem 0px rgba(87, 187, 254, 0.5);
+}
+.container-site .content-area .container-about {
+  background: white;
+  border-radius: 4px;
+  padding: 40px;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 0px 1rem 12.6rem 0px rgba(106, 110, 161, 0.33);
+  -moz-box-shadow: 0px 1rem 12.6rem 0px rgba(106, 110, 161, 0.33);
+  box-shadow: 0px 1rem 12.6rem 0px rgba(106, 110, 161, 0.33);
+}
+.container-site .content-area .container-about h2 {
+  color: #3f3f65;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  margin-bottom: 4rem;
+}
+.container-site .content-area .container-about p {
+  color: #6a6ea1;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  font-weight: 400;
+  line-height: 2;
+  margin-bottom: 2rem;
+}
+.container-site .content-area .social-media {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.container-site .content-area .social-media .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.4s ease-in-out;
+}
+.container-site .content-area .social-media .social:hover {
+  color: #57bcfe;
+  cursor: pointer;
+}
+.container-site .content-area .social-media .social .logo a[class^="ti"] {
+  font-size: 5rem;
+  margin-bottom: 1.5rem;
+  display: block;
+  text-decoration: none;
+}
+.container-site .content-area .social-media .social .stats {
+  font-size: 2rem;
+}
+.container-site .content-area .social-media .social .stats span {
+  text-align: center;
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
